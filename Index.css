@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'roboto', sans-serif;
+    margin: 0;
+}
+
+h1 {
+    font-size: 4.5em;
+}
+
+h2 {
+    font-size: 2.6em;
+}
+
+h3 {
+    font-size: 3.5em;
+}
+
+p {
+    font-size: 1.25em;
+}
+
+li {
+    font-size: 1.5em;
+    list-style: none;
+}
+
+
+button {
+    font-size: 1.5em;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 10px;
+    border: 1px solid rgb(0, 0, 0, 0, 5);
+    box-shadow: 2px 2px 10px rgba(0, 0, 0, 5);
+    color: white;
+    background-color: rgb(255, 38, 38);
+
+}
+
+button:hover {
+    background-color: rgb(211, 1, 1);
+
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+}
+
+header {
+    background-color: rgb(245, 245, 245);
+
+}
+
+header .logo {
+    margin: 0;
+    padding: 25px 30px;
+    font-weight: bold;
+    color: rgb(1, 157, 105);
+    font-size: 1.6em;
+
+}
+
+header .container {
+    display: flex;
+    flex-direction: colum;
+    align-items: center;
+}
+
+header nav {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-bottom: 25px;
+}
+
+header a {
+    padding: 5px 12px;
+    text-decoration: none;
+    font-weight: bold;
+    color: black;
+}
+
+header a:hover {
+    color: rgb(255, 12, 12);
+}
+
+#hero {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    height: 90vh;
+
+    background-image: url("media/e.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+}
+
+#hero h1 {
+    color: rgb(0, 0, 0);
+}
+
+#Animales .container {
+    text-align: center;
+    padding: 200px 12px;
+}
+
+#Nuestras-categorías {
+    background-color: rgb(30, 30, 30);
+    color: white;
+    text-align: center;
+}
+
+#Nuestras-categorías .container {
+    padding: 150px 12px;
+}
+
+#Nuestras-categorías h2 {
+    margin-top: 0;
+    font-size: 3em;
+}
+
+#Nuestras-categorías p {
+    display: none;
+}
+
+#Nuestras-categorías .carta {
+    background-position: center center;
+    background-size: cover;
+    padding: 50px 0px;
+    margin: 30px;
+    border-radius: 15px;
+}
+
+.carta:first-child {
+    background-image: url("media/b.jpg");
+}
+
+
+.carta:nth-child(2) {
+    background-image: url("media/d.jpg");
+
+}
+
+.carta:nth-child(3) {
+    background-image: url("media/hero.jpg");
+
+}
+
+#Razas-populares .container {
+    text-align: center;
+    padding: 250px 12px;
+
+
+}
+
+#Razas-populares li {
+    margin: 15px 0px;
+    font-weight: bold;
+
+}
+
+#Déjanos-un-comentario {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    flex-direction: column;
+    background-color: rgb(30, 30, 30);
+    color: white;
+    height: 80vh;
+}
+
+footer {
+    background-color: rgb(230, 230, 230);
+}
+
+footer p {
+    margin: 0;
+    padding: 12px;
+    color: rgb(100, 100, 100);
+}
+
+footer .container {
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+@media (min-width: 720px) {
+    header {
+        position: fixed;
+        width: 100%;
+    }
+}
+
+header .container {
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+header nav {
+    flex-direction: row;
+    padding-bottom: 0;
+    padding-right: 20px;
+}
+
+#Animales .container {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#Animales .texto {
+    width: 50%;
+    max-width: 600px;
+    text-align: initial;
+    padding-left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#Animales h2 {
+    margin-top: 0px;
+}
+
+
+#Animales .img-container {
+    background-image: url(media/c.jpg);
+    background-size: cover;
+    background-position: center center;
+    height: 500px;
+    width: 400px;
+}
+
+#Nuestras-categorías .categorías {
+    display: flex;
+    justify-content: center;
+}
+
+#Nuestras-categorías p {
+    display: block;
+    margin-bottom: 30px;
+}
+
+#Nuestras-categorías h3 {
+    margin-top: 0;
+}
+
+#Nuestras-categorías .carta {
+    padding: 5px;
+    background-repeat: no-repeat;
+    background-position: 0;
+    background-color: rgba(50, 50, 50, 1);
+    box-shadow: 2px 2px 10px rgb(0, 0, 0, 0, 5);
+}
+
+#Razas-populares {
+    background-image: url("media/a.jpg");
+    background-repeat: no-repeat;
+    background-size: 550px 570px;
+    background-position: calc(100vw - 500px) 120px;
+}
+
+#Razas-populares .container {
+    text-align: initial;
+}
+
+#Razas-populares ul {
+    margin-left: 50px;
+
+}
+
+@media (min-width: 1200px) {
+    #Razas-populares {
+        background-position-x: calc(100vw - 800px);
+
+    }
+}
